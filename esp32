@@ -1,0 +1,22 @@
+1- Open Arduino IDE program.
+2- Connect the esp32 to your device.
+3- File -> Preferences -> paste the link in 'Additional Boards Mangers URLs: 'http://dl.espressif.com/dl/package_esp32_index.json' (your can find it in datasheet).
+4- Go to Tools -> Board: "Arduino Uno" -> Boards Mangers.
+5- File -> Examples -> Basic -> Blink.
+then you can the code to check if the esp32 work with you or not (you know it work if the light is blink).
+
+6- If an error happpen then you neet to recognize the esr32 to your device, following:
+  A-Tools -> Board: "Arduino Uno" -> ESP32 -> 'WLEMOS MINI ESP32'. 
+  
+7-If steel not recognize the esp32 then you neet to install 'CP2104 driver.
+    (You can fond the name in : This PC -> right click -> Proprietaries -> Device Manager -> other device -> 'CP2104 USP to UART Bridge Controller'.
+    A- Go to google -> write 'CP2104 driver' -> 'silabas.com' website .
+    B- Click on 'Downlaod'.
+    C- Go to software -> install "CP210x Universal Windows Drivers".
+    D- Go to Downloads : open folder 'CP210x Universal Windows Drivers' -> then copy the above link.
+    E- This PC -> right click -> Proprietaries -> Device Manager -> other device -> 'CP2104 USP to UART Bridge Controller' -> right click -> updae driver -> 'Browse my 
+    computer for drivers' -> paste the link -> next -> close.
+    F- Arduino IDE program -> Tools -> Port -> COM3.
+    G- File -> Examples -> Basic -> Blink.
+    H- Run the code. 
+    
